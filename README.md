@@ -1,5 +1,6 @@
+### Данный репозиторий основан на сборке [`Flowseal'a`](https://github.com/Flowseal/zapret-discord-youtube). Все вопросы, касающееся работы сборки в целом для Youtube, Discord и сайтов могут быть найдены там.
+
 > [!WARNING]
-> Данный репозиторий основан на сборке [`Flowseal'a`](https://github.com/Flowseal/zapret-discord-youtube). Все вопросы, касающееся работы сборки в целом для Youtube, Discord и сайтов могут быть найдены там.
 >
 > ### АНТИВИРУСЫ
 > WinDivert может вызвать реакцию антивируса.
