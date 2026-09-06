@@ -15,7 +15,7 @@ cd /d %BIN%
 
 start "zapret: %~n0" /min "%BIN%winws.exe" --wf-tcp=80,443,2053,2083,2087,2096,8443,6112,%GameFilterTCP% --wf-udp=443,19294-19344,50000-50100,%GameFilterUDP% ^
 --filter-tcp=443 --hostlist-domains=ncplatform.net,guildwars2.com,staticwars.com,ua.ncsoft.com,s3.amazonaws.com,catalog.gamepass.com --dpi-desync=hostfakesplit --dpi-desync-hostfakesplit-mod=host=reddit.com --dpi-desync-fooling=ts --new ^
---filter-tcp=80 --hostlist-domains=assetcdn.101.ArenaNetworks.com --dpi-desync=fake --dpi-desync-fake-http="%BIN%tls_clienthello_11.bin" --dpi-desync-fooling=ts --dpi-desync-cutoff=d2 --new ^
+--filter-tcp=80 --hostlist-domains=assetcdn.101.ArenaNetworks.com --dpi-desync=fake,hostfakesplit --dpi-desync-fake-tls-mod=rnd,dupsid,sni=reddit.com --dpi-desync-hostfakesplit-mod=host=reddit.com,altorder=1 --dpi-desync-fooling=ts --dpi-desync-fake-http="%BIN%tls_clienthello_11.bin" --new ^
 --filter-tcp=6112 --ipset="%LISTS%gw.txt" --dpi-desync=fake --dpi-desync-fake-unknown="%BIN%tls_clienthello_11.bin" --dpi-desync-any-protocol --dpi-desync-fooling=badseq --dpi-desync-repeats=1 --dpi-desync-cutoff=d3 --new ^
 --filter-udp=443 --hostlist="%LISTS%list-general.txt" --hostlist="%LISTS%list-general-user.txt" --hostlist-exclude="%LISTS%list-exclude.txt" --hostlist-exclude="%LISTS%list-exclude-user.txt" --ipset-exclude="%LISTS%ipset-exclude.txt" --ipset-exclude="%LISTS%ipset-exclude-user.txt" --dpi-desync=fake --dpi-desync-repeats=11 --dpi-desync-fake-quic="%BIN%quic_initial_www_google_com.bin" --new ^
 --filter-udp=19294-19344,50000-50100 --filter-l7=discord,stun --dpi-desync=fake --dpi-desync-fake-discord="%BIN%ACTIVE_DISCORD_UDP.bin" --dpi-desync-fake-stun="%BIN%ACTIVE_DISCORD_UDP.bin" --dpi-desync-repeats=6 --new ^
