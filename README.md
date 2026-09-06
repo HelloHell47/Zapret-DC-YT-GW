@@ -119,5 +119,6 @@ Guild Wars 2 использует три порта для своей работ
 
 Стратегии для этих функций находятся в самом начале файлов .bat (строки 17-20).
 
-💖 Большая благодарность [`Flowseal'у`](https://github.com/Flowseal/zapret-discord-youtube) и всем участникам его проекта
+💖 Большая благодарность [Flowseal'у](https://github.com/Flowseal/zapret-discord-youtube) и всем участникам его проекта
+
 💖 Отдельная благодарность разработчику [zapret](https://github.com/bol-van/zapret) - [bol-van](https://github.com/bol-van)
